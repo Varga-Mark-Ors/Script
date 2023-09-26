@@ -9,8 +9,8 @@ def product(numbers):
     return osszeg
 
 def main():
-    #numbers = [1, 2, 3, 4, 5]
-    numbers = []
+    numbers = [1, 2, 3, 4, 5]
+
     print("Számok szorzata=",product(numbers))
 
 if __name__=="__main__":
