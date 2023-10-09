@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+
+def main():
+
+    p = [i for i in range(1000) if (i % 5 == 0) or (i % 3 == 0)]
+    print(sum(p))
+
+if __name__=="__main__":
+    main()
