@@ -1,0 +1,90 @@
+#Mennyi idős leszel 5 év múlva?
+import sys
+import random
+'''
+try:
+    while True:
+        ev = int(input("Add meg a korodat! "))
+        print("5 év múlva {0} éves leszel. ".format(ev+5))
+
+except EOFError:
+    pass
+except KeyboardInterrupt:
+    pass
+'''
+
+'''
+for i in sys.stdin:
+    ev = int(input("Add meg a korodat! "))
+    print("5 év múlva {0} éves leszel. ".format(ev+5))
+'''
+
+'''
+#list comprehension
+li = [random.randint(0,100) for _ in range(0,10)]
+print(li)
+
+li2 = [n for n in range(0,10) if n%2 == 0]
+print(li2)
+'''
+
+'''
+#Vegyünk egy gyümölcsökkel teli listát
+#1. Nagybetűsítsük a listában a gyümölcsök neveit + '!'
+#2. Vegyük ki azokat az elemeket amiben van "e" betű
+
+gyumolcs = ["alma", "körte", "papaya", "eper", "avocado", "banán"]
+#1
+li = [s.upper() + '!' for s in gyumolcs]
+print(li)
+
+li2 = [s for s in gyumolcs if s.find("e") == -1]
+print(li2)
+
+li2 = [s for s in gyumolcs if "e" not in s]
+print(li2)
+'''
+
+'''
+#sztringkezelő függvények
+
+a = "H1;H2;H3"
+
+li = a.split(sep=";")
+a.upper()
+a.lower()
+a.find()
+a.capitalize()
+a.count()
+a.isalpha()
+print(li)
+
+li.index()
+li.sort()
+sorted(li)
+li.sorted
+li.append
+max(li)
+min(li)
+len(li)
+'''
+
+'''
+#Legrövidebb név / leghosszabb név hossza
+
+nevek = ["Vég Béla", "Kő Pál", "Masztur Bálint", "Tank Aranka", "Vicc Elek"]
+legrovidebb = nevek[0]
+
+for nev in nevek:
+    if len(legrovidebb) > len(nev):
+        legrovidebb = nev
+print(legrovidebb)
+
+leghosszabb = len(nevek[0])
+n = 0
+while n <len(nevek):
+    if leghosszabb < len(nevek[n]):
+        leghosszabb = len(nevek[n])
+    n += 1
+print(leghosszabb)
+'''
